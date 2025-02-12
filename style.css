@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0097a7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Penguin Type Pages */
+.penguin-type {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #0097a7;
+    margin-bottom: 20px;
+}
+
+.penguin-type img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.penguin-type .details {
+    width: 60%;
+}
+
+.penguin-type h2 {
+    color: #0097a7;
+    font-size: 2em;
+}
+
+.penguin-type p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Donation Page */
+.donation-form {
+    background-color: #0097a7;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.donation-form input, .donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.donation-form button {
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donation-form button:hover {
+    background-color: #f39c12;
+}
+
+/* Footer */
+footer {
+    background-color: #0097a7;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .penguin-type {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .penguin-type img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .donation-form {
+        width: 90%;
+    }
+}
